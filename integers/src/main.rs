@@ -1,3 +1,7 @@
+// Reference: The Rust Programming Language (online book)
+// Ch3.1 - https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html
+// Ch3.2 (partial) - https://doc.rust-lang.org/book/ch03-02-data-types.html
+
 const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
 
 fn main() {

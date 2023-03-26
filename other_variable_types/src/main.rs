@@ -1,5 +1,7 @@
-//uncomment for panic example
-// use std::io;
+// Reference: The Rust Programming Language (online book)
+// Ch3.2 (partial) - https://doc.rust-lang.org/book/ch03-02-data-types.html
+
+// use std::io; // <--uncomment for panic example
 
 fn main() {
     // floating point
