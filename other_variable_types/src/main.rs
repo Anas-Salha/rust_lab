@@ -1,5 +1,5 @@
 //uncomment for panic example
-// use std::io;  
+// use std::io;
 
 fn main() {
     // floating point
@@ -24,18 +24,18 @@ fn main() {
     let t = true;
     let f = false;
     println!("the values of t and f are {t} and {f}");
-    
+
     //char in rust represents a unicode scalar value, which means it can represent a lot more than just ascii.
     let heart_eyed_cat = '😻';
-    println!("the value of heart_eyed_cat is {heart_eyed_cat}"); 
-    
+    println!("the value of heart_eyed_cat is {heart_eyed_cat}");
+
 
     let player = ("anas", 26, 175.0);
     let (name, _age, height) = player;
-    println!("the player name is {name}"); 
-    println!("the player age is {}", player.1); 
-    println!("the player height is {:.1}", height); 
-    println!("the player's name, age, and height values are {:#?}", player); 
+    println!("the player name is {name}");
+    println!("the player age is {}", player.1);
+    println!("the player height is {:.1}", height);
+    println!("the player's name, age, and height values are {:#?}", player);
 
     let months: [&str; 12];
     months = ["january", "february", "march", "april", "may", "june", "july",
@@ -48,14 +48,14 @@ fn main() {
 
     let t = ([1; 2], [3; 4]);
     let (a, _) = t;
-    println!("{}", a[0] + t.1[0]); 
+    println!("{}", a[0] + t.1[0]);
 
     let i = 33;
     let j = 31;
     let mut arr = [i, j];
-    arr[1] = 32; 
+    arr[1] = 32;
     println!("The value of j is {j} and the value of arr[1] is {}", arr[1]);
-    
+
     //panic example
     // let a = [1, 2, 3, 4, 5];
 

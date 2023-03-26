@@ -11,7 +11,7 @@ fn main() {
     println!("Welcome to {game_name}!");
     println!("You have {max_attempts} lives. Guess a randomly generated number (1-100)");
 
-    
+
     for attempt in 0..max_attempts{
         let mut user_guess = String::new();
         println!("Attempt {} - {game_prompt}", attempt + 1);
@@ -19,7 +19,7 @@ fn main() {
         io::stdin()
             .read_line(&mut user_guess)
             .expect("Failed to read line");
-        
+
         if user_guess == "q\n"{
             println!("Quitter :).");
             return;
@@ -32,7 +32,7 @@ fn main() {
                 continue;
             }
         };
-        
+
         match user_guess.cmp(&secret_number) {
             Ordering::Less => println!("Too small! Git gud."),
             Ordering::Greater => println!("Too big! Git gud."),

@@ -18,19 +18,19 @@ fn main() {
 
     {
         let shadowed_variable = shadowed_variable * 2;
-        println!("The value of shadowed_variable is: {shadowed_variable}");            
+        println!("The value of shadowed_variable is: {shadowed_variable}");
     }
 
     println!("The value of shadowed_variable is: {shadowed_variable}");
 
     let mut small_integer: i8 = 120;
     println!("The value of small_integer is: {small_integer}");
-    
+
     // u8 overflows when (120 + 10) => None => small_integer value doesnt change.
     small_integer = match small_integer.checked_add(10){
         Some(result) => result,
         None => small_integer,
-    }; 
+    };
     println!("The value of small_integer is: {small_integer}");
 
 
@@ -38,7 +38,7 @@ fn main() {
     small_integer = match small_integer.checked_add(5){
         Some(result) => result,
         None => small_integer,
-    }; 
+    };
     println!("The value of small_integer is: {small_integer}");
 
     let num_literal = 1_000;
