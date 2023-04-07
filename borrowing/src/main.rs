@@ -1,3 +1,6 @@
+// Reference: The Rust Programming Language (online book)
+// Ch4.2 - https://rust-book.cs.brown.edu/ch04-02-references-and-borrowing.html
+
 fn main() {
     let x: Box<i32> = Box::new(-1);
     let x_abs1 = i32::abs(*x); // explicit dereference

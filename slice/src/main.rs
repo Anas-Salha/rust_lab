@@ -1,3 +1,6 @@
+// Reference: The Rust Programming Language (online book)
+// Ch4.4 - https://rust-book.cs.brown.edu/ch04-04-slices.html
+
 fn main() {
     let mut s = String::from("hello");
     let hello: &str = &s[0..5];
