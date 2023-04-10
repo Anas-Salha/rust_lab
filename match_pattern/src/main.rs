@@ -1,3 +1,6 @@
+// Reference: The Rust Programming Language (online book)
+// Ch6.3 - https://rust-book.cs.brown.edu/ch06-03-if-let.html
+
 #[derive(Debug)]
 enum UsState {
     Alabama,
